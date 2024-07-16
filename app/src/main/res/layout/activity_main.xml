@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageHero"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bitmap"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backgorundImage"
+        android:src="@drawable/bg_cover"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Ideal for the health conscious"
+        android:textSize="21sp"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="450dp"
+        android:textColor="@color/colorGray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSubHeader"
+        android:layout_width="302dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="40dp"
+        android:text="Keep your body at glance."
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:textSize="44sp"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@id/textHeader"
+        app:layout_constraintTop_toTopOf="@id/textHeader" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
